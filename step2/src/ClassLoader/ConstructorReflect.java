@@ -12,7 +12,7 @@ public class ConstructorReflect {
 //        Constructor<?> constructor1 = clazz.getConstructor();
 //        //如果没有就抛出NoSuchMethodException
         Constructor<?> constructor2 = clazz.getConstructor(String.class, int.class);
-        //私有化取消检查
+        //私有化取消临时检查，暴力反射
         constructor2.setAccessible(true);
 
 //        for (Constructor<?> constructor : constructors) {
